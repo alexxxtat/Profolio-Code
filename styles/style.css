@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body nav {
+  background-color: rgb(231, 255, 233);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+body nav ul {
+  display: flex;
+  justify-content: center;
+}
+body nav ul li {
+  list-style-type: none;
+  padding: 1rem;
+  border-radius: 20px;
+}
+body nav ul li a {
+  color: black;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+body main section.main-area {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+body main section.main-area div.info {
+  flex-basis: 40vw;
+  padding: 2rem;
+}
+body main section.main-area div.info h1 {
+  font-size: 2.5rem;
+}
+body main section.main-area div.info h2 {
+  font-size: 1rem;
+}
+body main section.main-area div.info a {
+  color: white;
+  background-color: rgb(54, 212, 138);
+  padding: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+body main section.main-area div.info a:hover {
+  transform: scale(1.2);
+}
+body main section.main-area img {
+  flex: 0 1 20vw;
+  height: 30vh;
+  border-radius: 5rem;
+}
+body main section.about-me {
+  background-color: rgb(231, 255, 233);
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+body main section.about-me div.desc {
+  width: 70vw;
+  text-align: center;
+}
+body main section.about-me div.desc h2 {
+  font-size: 2rem;
+}
+body main section.about-me div.progress-area {
+  margin-top: 1.5rem;
+  width: 58vw;
+}
+body main section.about-me div.progress-area p {
+  margin: 0.5rem 0rem;
+}
+body main section.about-me div.progress-area .progress-bar-area {
+  margin-top: 1rem;
+}
+body main section.resume {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+body main section.resume section.table {
+  padding: 2rem;
+  padding-left: 20vw;
+  padding-right: 20vw;
+}
+body main section.resume section.table table {
+  border-collapse: collapse;
+}
+body main section.resume section.table table tr {
+  border-bottom: 2px solid gray;
+  transition: all 0.2s ease;
+}
+body main section.resume section.table table tr:hover {
+  background-color: rgb(184, 255, 222);
+}
+body main section.resume section.table table tr td {
+  padding: 1rem;
+}
+body main section.resume section.table table tr td a {
+  color: black;
+  text-decoration: none;
+}
+body main section.rectangle {
+  width: 100vw;
+}
+body main section.rectangle .rect {
+  overflow-x: hidden;
+}
+body main section.rectangle div.greenRect {
+  width: 30vh;
+  height: 90vh;
+  border: 10px solid rgba(195, 255, 200, 0.3);
+  border-right: 0px solid white;
+  position: absolute;
+  left: 20px;
+  top: 80px;
+  z-index: -1;
+}
+body main section.rectangle div.greenRect2 {
+  width: 50vh;
+  height: 60vh;
+  border: 10px solid rgba(195, 255, 200, 0.5);
+  border-right: 0px solid white;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+  z-index: -1;
+}
+body main section.rectangle div.greenRect3 {
+  width: 50vh;
+  height: 40vh;
+  border: 10px solid rgba(195, 255, 200, 0.5);
+  border-right: 0px solid white;
+  position: absolute;
+  left: 10px;
+  top: 70vh;
+  z-index: -1;
+}
+body main section.rectangle div.greenRect4 {
+  width: 40vh;
+  height: 35vh;
+  border: 10px solid rgba(195, 255, 200, 0.5);
+  border-right: 0px solid white;
+  position: absolute;
+  left: 25vw;
+  top: 70vh;
+  z-index: -1;
+}
+
+.active {
+  color: rgb(25, 186, 57);
+  font-weight: bolder;
+}
+
+@media screen and (max-width: 1400px) {
+  body main section.resume section.table {
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 950px) {
+  body main section.main-area {
+    flex-direction: column;
+    padding: 2rem;
+  }
+  body main section.main-area div.info {
+    width: 60vw;
+    flex-basis: 10vw;
+    text-align: center;
+    padding: 0px;
+    padding-bottom: 1rem;
+  }
+  body main section.main-area div.info a {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  body main section.resume section.table {
+    padding-left: 0vw;
+    padding-right: 0vw;
+  }
+}
+@media screen and (max-width: 670px) {
+  body main section.main-area img {
+    flex: 0 1 15vw;
+    height: 25vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  body main section.main-area img {
+    flex: 0 1 10vw;
+    height: 20vh;
+  }
+}/*# sourceMappingURL=style.css.map */
